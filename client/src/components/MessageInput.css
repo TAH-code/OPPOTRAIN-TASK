@@ -1,0 +1,52 @@
+.message-input-container {
+  padding: 0 16px 24px;
+  background: var(--bg-primary);
+}
+
+.message-input-wrapper {
+  background: var(--bg-accent);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  min-height: 44px;
+}
+
+.message-input-wrapper input {
+  flex: 1;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 15px;
+  padding: 12px 0;
+}
+
+.message-input-wrapper input::placeholder {
+  color: var(--text-muted);
+}
+
+.send-btn {
+  background: none;
+  color: var(--text-muted);
+  font-size: 20px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+  margin-left: 8px;
+}
+
+.send-btn:hover {
+  color: var(--accent);
+}
+
+.send-btn:active {
+  transform: scale(0.95);
+}
+
+.send-btn:disabled {
+  color: var(--bg-tertiary);
+  cursor: not-allowed;
+  transform: none;
+}
